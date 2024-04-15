@@ -15,7 +15,7 @@ public class Password {
     /**
      * Longitud de la contraseÃ±a
      */
-    private int longitud;
+    private int longitudcontrasena;
     /**
      * caracteres de la contraseÃ±a
      */
@@ -28,7 +28,7 @@ public class Password {
      * @return longitud de la contraseÃ±a
      */
     public int getLongitud() {
-        return longitud;
+        return longitudcontrasena;
     }
   
     /**
@@ -36,7 +36,7 @@ public class Password {
      * @param longitud a cambiar
      */
     public void setLongitud(int longitud) {
-        this.longitud = longitud;
+        this.longitudcontrasena = longitud;
     }
   
     /**
@@ -53,7 +53,7 @@ public class Password {
      */
     public String generaPassword (){
         String password="";
-        for (int i=0;i<longitud;i++){
+        for (int i=0;i<longitudcontrasena;i++){
             //Generamos un numero aleatorio, segun este elige si aÃ±adir una minuscula, mayuscula o numero
             int eleccion=((int)Math.floor(Math.random()*3+1));
   
@@ -114,7 +114,7 @@ public class Password {
      * @param longitud
      */
     public Password (int longitud){
-        this.longitud=longitud;
+        this.longitudcontrasena=longitud;
         contrasena=generaPassword();
     }
 
